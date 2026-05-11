@@ -5,6 +5,7 @@ import { useState } from "react";
 import { ArrowUpRight } from "@/components/icons";
 import { LoadingScreen } from "@/components/loading-screen";
 import Image from "next/image";
+import Link from "next/link";
 
 // ----------------------------------------------------------------------
 // DATA
@@ -126,10 +127,10 @@ export function Hero() {
                initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}
                className="mt-10"
              >
-               <button className="flex items-center gap-2 h-14 px-8 rounded-full bg-accent text-white font-medium hover:bg-accent-2 hover:-translate-y-0.5 transition-all shadow-[0_0_20px_rgba(30,127,92,0.4)] group">
+               <Link href="/get-assessment" className="flex items-center justify-center w-max gap-2 h-14 px-8 rounded-full bg-accent text-white font-medium hover:bg-accent-2 hover:-translate-y-0.5 transition-all shadow-[0_0_20px_rgba(30,127,92,0.4)] group">
                  Get a Free Assessment
                  <ArrowUpRight className="size-4 text-white/70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-               </button>
+               </Link>
              </motion.div>
            </div>
 
